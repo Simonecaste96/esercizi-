@@ -4,27 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come inizare in modo facile.">
+    <meta name="description"
+        content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come inizare in modo facile.">
     <title>Sviluppo Pag Web - Blog Epicode</title>
-    <link rel="stylesheet" href="/root/assets/CSS/style.css">
+    <link rel="stylesheet" href="/esercizio_02_23/root/assets/CSS/style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="/root/assets/img/logo.svg">
+            <img src="/esercizio_02_23/root/assets/img/logo.svg" alt="LogoEpicode">
             <p>Epicode - Il blog dei developers</p>
             <ul>
-                <li><a href="javascript:void(0)">Home</a></li>
-                <li><a href="javascript:void(0)">Articoli</a></li>
-                <li><a href="javascript:void(0)">Job</a></li>
+                <li><a href="javascript:void(0)" target=”_blank”>Home</a></li>
+                <li><a href="javascript:void(0)" target=”_blank”>Articoli</a></li>
+                <li><a href="javascript:void(0)" target=”_blank”>Job</a></li>
             </ul>
             <hr>
         </nav>
     </header>
 
 
-<!--Inizio parte centrale-->
+    <!--Inizio parte centrale-->
     <main>
         <section>
             <h2>Come creare un tamplate per i post</h2>
@@ -79,47 +80,52 @@
                     <td>76%</td>
                 </tr>
             </table>
-            <p>Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/">tool
+            <p>Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/"
+                    target=”_blank”>tool
                     online</a> dedicato allo scopo. Una volta ottimizato il tutto, avremo raggiunto il nostro obiettivo
                 ed essere stati dei veri developers come loro:</p>
             <iframe src="https://www.youtube.com/embed/dvOvHXruEDM"></iframe>
         </section>
     </main><!--Fine parte centrale-->
 
-        <aside>
-            <h2>Novità</h2>
-            <p>Vuoi rimanere aggionrato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-
-            <!--Ho inserito style perchè non riuscivo a inserirlo su style.css, da modificare-->
-            <form>
-                <input style="border-radius: 5px;" type="email" name="email" placeholder="inserisci l'email">&nbsp;<button style="border-radius: 5px;" id="iscrivitiButton" type="submit"
-                    name="submit">Iscriviti!</button>
-            </form>
-            <h2>Articoli correlati</h2>
-            <a href="javascript:void(0)">Validare il codice HTML</a>
-            <p>Categoria: develop</p>
-            <p>Data: 18/09/2020</p>
-            <a href="javascript:void(0)">Correggere la sintassi</a>
-            <p>Categoria: develop</p>
-            <p>Data: 15/07/2023</p>
-
-            <a href="javascript:void(0)">Meno Kb nella pagina</a>
-            <p>Categoria: develop</p>
-            <p>Data: 16/09/2024</p>
-
-        </aside>
-    
-        <hr>
-        <footer><!--Inzio piè di pagina-->
-            <p>Blog Epicode - Autore: Simone Castelluccio &copy; 2024 </p>
-            <address>
-                <p>Testata online di Simone Castelluccio, registrata con prot. n.213/2024 - via Oder 11- Roma P.IVA
-                    00012234354:<a href="mailto:info@epicode.school">info@epicode.school</a></p>
-            </address>
-        </footer>
+    <!--Inzio aside-->
+    <aside>
+        <h2>Novità</h2>
+        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
 
 
-    
+        <form>
+            <fieldset>
+                <input type="email" name="email" placeholder="yourEmail@example.com">&nbsp;<button type="submit"
+                    name="iscriviti">Iscriviti!</button>
+            </fieldset>
+        </form>
+        <h2>Articoli correlati</h2>
+        <a href="javascript:void(0)" target=”_blank”>Validare il codice HTML</a>
+        <p>Categoria: develop</p>
+        <p>Data: 18/09/2020</p>
+        <a href="javascript:void(0)" target=”_blank”>Correggere la sintassi</a>
+        <p>Categoria: develop</p>
+        <p>Data: 15/07/2023</p>
+
+        <a href="javascript:void(0)" target=”_blank”>Meno Kb nella pagina</a>
+        <p>Categoria: develop</p>
+        <p>Data: 16/09/2024</p>
+
+    </aside>
+    <!--Fine aside-->
+
+    <hr>
+    <footer><!--Inzio piè di pagina-->
+        <p>Blog Epicode - Autore: Simone Castelluccio &copy; 2024 </p>
+        <address>
+            <p>Testata online di Simone Castelluccio, registrata con prot. n.213/2024 - via Oder 11- Roma P.IVA
+                00012234354:<a href="mailto:info@epicode.school">info@epicode.school</a></p>
+        </address>
+    </footer>
+
+
+<script src="/esercizio_02_23/root/assets/JS/script.js"></script>
 </body>
 
 </html>
