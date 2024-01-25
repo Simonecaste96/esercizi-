@@ -19,17 +19,27 @@ h3{
 }
 
 .h1{
+    display: inline;
+    width: fit-content;
+    
    
+  
 }
 .text{
     width:50%;
     text-align: left;
     display: inline;
     justify-content: center;
+    
 }
 
 #partecentrale{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.imgFocaccia{
+    border-radius: 10px;
 }
