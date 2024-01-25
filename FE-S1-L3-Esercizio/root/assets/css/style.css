@@ -1,7 +1,8 @@
 body{
     width: 100%;
     margin: 0;
-    text-align: center;  
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     color: #107777;
@@ -10,6 +11,7 @@ h3{
     color: #B5460F;
     margin: 0;
 }
+
 .p{
     color: #999999;
 }
@@ -68,7 +70,4 @@ h3{
 
 .imgFocaccia{
     border-radius: 10px;
-}
-.border{
-   
 }
