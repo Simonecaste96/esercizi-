@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.h1{
+    text-align: center;
+}
+.head{
+    border-top: 2px solid;
+    border-color: #ffd877;
+    background-color: #fdfbf1;  
+}
+
+.main{
+    width:50%;
+    text-align: left;
+    
+
+   
+   
+}
+
+.text{
+    
+}
+
+/*
+body{
+    text-align: center;
+    margin: 0;
+}
+
+.logo{
+    
+width: 200px;
+}
+.ulsize{
+    
+   
+}
+
