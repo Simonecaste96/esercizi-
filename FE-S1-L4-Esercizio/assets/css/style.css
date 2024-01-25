@@ -24,15 +24,22 @@ a{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    text-align: center;
     border-radius: 5px;
-    
-    background-color:#0287A4;
+    background: linear-gradient( rgba( 0, 160,198,1), rgba(3,109,134,1));
+    text-transform: uppercase;
+    font-weight: bold;
     box-shadow: 0px 0px 5px 5px #47474b;
 }
 .linkheader{
 color: white;
 text-decoration: none;
 }
+.ulheader{
+    list-style: none;
+  
+}
+
 
 /* MAIN */
 .main{
@@ -44,11 +51,6 @@ text-decoration: none;
     border-radius: 5px;
     background-color: white;
     box-shadow: 0px 0px 5px 5px #47474b;
-}
-table{
-    width: 20%;
-    padding: 10px;
-    text-align: center;
 }
 
 iframe{
@@ -62,7 +64,12 @@ iframe{
 table{
     border:0px;
     border: solid 1px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #3f6bca;
+    border-collapse: collapse;
 }
+
 
 /* FORM */
 .form{
@@ -88,6 +95,7 @@ table{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    text-align: center;
     border-radius: 5px;
     background-color:#045467 ;
     box-shadow: 0px 0px 5px 5px #47474b;
