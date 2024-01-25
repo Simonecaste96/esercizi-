@@ -1,0 +1,94 @@
+/* IMPOSTAZIONI GENERALI */
+html, body{
+    background-image: url(/FE-S1-L4-Esercizio/assets/img/sfondo.png)
+}
+/* HEADER */
+img{
+    width: 200px;
+}
+a{
+    color: #49B0D2;
+}
+.b{
+    color:#AA2072 ;
+}
+.centro{
+    display: inline-block;
+    align-items: center;
+
+    
+}
+.header{
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    
+    background-color:#0287A4;
+    box-shadow: 0px 0px 5px 5px #47474b;
+}
+.linkheader{
+color: white;
+text-decoration: none;
+}
+
+/* MAIN */
+.main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px #47474b;
+}
+table{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+iframe{
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+table{
+    border:0px;
+    border: solid 1px;
+}
+
+/* FORM */
+.form{
+    text-align: center;
+    
+    
+    padding: 15px;
+    background-color:#E1E2E3 ;
+
+}
+
+/* ELEMENTI NELL' ASIDE */
+.articolicorrelati{
+    margin-bottom: 15px;
+    display: block;
+    padding: 15px;
+    background-color:#E1E2E3 ;
+    
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color:#045467 ;
+    box-shadow: 0px 0px 5px 5px #47474b;
+}
