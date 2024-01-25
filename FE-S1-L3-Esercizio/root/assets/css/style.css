@@ -3,9 +3,15 @@ body{
     margin: 0;
     text-align: center;  
 }
-
+a{
+    color: #107777;
+}
 h3{
+    color: #B5460F;
     margin: 0;
+}
+.p{
+    color: #999999;
 }
 .nav{
     
@@ -13,6 +19,7 @@ h3{
     border-left: solid 2px #ffd877;
 }
 .head{
+    color: #004d4c;
     border-top: 2px solid;
     border-color: #ffd877;
     background-color: #fdfbf1;  
