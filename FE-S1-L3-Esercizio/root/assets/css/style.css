@@ -19,7 +19,8 @@ h3{
 }
 
 .h1{
-    display: inline;
+    display: inline-block;
+    text-align: left;
     width: fit-content;
     
    
@@ -28,14 +29,14 @@ h3{
 .text{
     width:50%;
     text-align: left;
-    display: inline;
+    display: inline-block;
     justify-content: center;
     
 }
 
 #partecentrale{
-    width: fit-content;
-    display: flex;
+    width: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: center;
 }
