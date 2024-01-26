@@ -1,0 +1,130 @@
+/* Your styles here */
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    text-align: center;
+    line-height: 1.65;
+}
+
+p{
+    color: #35432F;
+    font-family: 'Open Sans', sans-serif;
+    font-size: x-large;
+}
+a{
+    text-decoration: none;
+    color: #c8e7f0;
+}
+h1,h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+.imglogo{
+    text-align: center;
+    width:150px
+}
+.primotitolo{
+    width: 50vw;
+    font-size: xx-large;
+}
+.testobottone{
+    font-family: 'Montserrat', sans-serif;
+   color: white;
+}
+.bottone{ 
+
+font-size: large;
+width: 150px;
+padding: 20px;
+}
+header{
+    width: 100%;
+    background-color:black;
+    padding:20px;
+}
+.primotitolo{
+    display: block;
+    flex-direction: column;
+    align-content: center;
+    margin:0;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height:1.5;
+    background-image: url(../images/banner.jpg);
+    background-size:cover;
+    padding:90px;
+    padding-bottom: 70px;
+}
+span{
+    background-color: #f04c2f;
+    color: white;
+    border-radius: 5px;
+
+}
+.main1{
+    text-align: center;
+    padding: 90px;
+    padding-bottom: 70px;
+}
+.imgpc{
+    text-align: center;
+    border-radius: 45%;
+    width:250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+blockquote{
+    margin: 0;
+    padding: 90px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #e22d0e;
+}
+.pcit{
+    color: white;
+}
+.main2{
+    margin: 10px;
+}
+.borderimg{
+    margin: 30px;
+    border: solid 1px #dee1e3;
+    border-radius: 5px;
+
+}
+.img1,.img2,.img3{
+
+    text-align: center;
+    width: 100%
+}
+.thead{
+    color: white;
+}
+#contatti {
+    
+   display: flex;
+   flex-direction: column;
+    text-align: center;
+    padding-bottom: 90px;
+    background-color: #25a2c3;
+}
+.via{
+    color: #c8e7f0;
+    margin:0
+}
+.pyxabay{
+    color: white;
+    padding-top: 50px;
+    display: inline;
+    text-align: center;
+    border-top: solid 1px white;
+    
+}
+.material-symbols-outlined{
+    background-color: #f04c2f;
+}
