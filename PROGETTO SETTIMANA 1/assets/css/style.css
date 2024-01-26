@@ -56,8 +56,9 @@ header{
     line-height:1.5;
     background-image: url(../images/banner.jpg);
     background-size:cover;
-    padding:90px;
-    padding-bottom: 70px;
+    width:100% ;
+    padding:10px;
+    
 }
 span{
     background-color: #f04c2f;
@@ -67,8 +68,8 @@ span{
 }
 .main1{
     text-align: center;
-    padding: 90px;
-    padding-bottom: 70px;
+    width:100% ;
+    padding:10px;
 }
 .imgpc{
     text-align: center;
@@ -79,9 +80,8 @@ span{
 }
 blockquote{
     margin: 0;
-    padding: 90px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    width:100% ;
+    padding:10px;
     text-align: center;
     background-color: #e22d0e;
 }
@@ -89,7 +89,8 @@ blockquote{
     color: white;
 }
 .main2{
-    margin: 10px;
+    width:100% ;
+    padding:10px;
 }
 .borderimg{
     margin: 30px;
@@ -110,7 +111,8 @@ blockquote{
    display: flex;
    flex-direction: column;
     text-align: center;
-    padding-bottom: 90px;
+    width:100% ;
+    padding:10px;
     background-color: #25a2c3;
 }
 .via{
