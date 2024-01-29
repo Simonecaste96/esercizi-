@@ -10,15 +10,15 @@ REGOLE
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
-let spiegazione = "I principali datatype in JS sono 5: Dato Stringa (viene scritto tra 'singoli apici' oppure 'doppi come questa spiegazione'), DATO Numerico (solo numero senza 'apici singo o doppi'), Dato Booleano (che fa ottenere come risultato solo True oppure False in base al 'paragone'), Null ( con Null specifichiamo che la variabile esiste ma ancora non gli abbiamo dato un valore in maniera volontaria! ) e Undefinided( indica che non è stato assegnato alcun valore alla variabile) comunque i bambini non usano JacaScript";
+let spiegazione = "I principali datatype in JS sono 5: Dato Stringa (viene scritto tra 'singoli apici' oppure 'doppi come questa spiegazione'), DATO Numerico (solo numero senza 'apici singo o doppi'), Dato Booleano (che fa ottenere come risultato solo True oppure False in base al 'paragone'), Null ( con Null specifichiamo che la variabile esiste ma ancora non gli abbiamo dato un valore in maniera volontaria! ) e Undefinided( indica che non è stato assegnato alcun valore alla variabile)";
 
-console.log(spiegazione);
+document.getElementById("esercizio0").innerHTML=(spiegazione);
 
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
-const myName="Simone";
-console.log(myName)
+var myName="Simone";
+document.getElementById("esercizio1").innerHTML= myName
 
 
 
@@ -27,7 +27,7 @@ console.log(myName)
 */
 let primoNumero=12;
 let secondoNumero=20;
-console.log(primoNumero+secondoNumero)
+document.getElementById("esercizio2").innerHTML=(primoNumero+secondoNumero)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -35,7 +35,7 @@ console.log(primoNumero+secondoNumero)
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 let x=12;
-console.log(x)
+document.getElementById("esercizio3").innerHTML=(x)
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 
@@ -49,9 +49,16 @@ console.log(x)
 */
 
 
-/*  
-const myName="Castelluccio"
-console.log(myName)*/
+
+var myName="Castelluccio"
+document.getElementById("esercizio4").innerHTML=(myName)
+
+/*
+const altronome="Simone";
+altronome="Mario";
+console.log(altronome);
+*/
+
 
 
 
@@ -61,9 +68,8 @@ console.log(myName)*/
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 let numero4=4;
-console.log(numero4-x);
-console.log("Oppure");
-console.log(x-numero4);
+document.getElementById("esercizio5").innerHTML=(numero4-x);
+
 
 
 /* ESERCIZIO 7
@@ -74,6 +80,10 @@ console.log(x-numero4);
 
 let name1="jhon";
 let name2="Jhon";
-console.log(name1!==name2);
-console.log(name1.toLowerCase===name2.toLowerCase);
+let risultato=name1!==name2;
+let risultato2=name1.toLowerCase==name2.toLowerCase;
+document.getElementById("esercizio6").innerHTML=("jhon è diverso a Jhon?"+" "+ risultato);
+
+
+document.getElementById("esercizio7").innerHTML=("jhon è uguale a jhon?"+" "+ risultato2);
 
