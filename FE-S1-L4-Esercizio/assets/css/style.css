@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-image: url(/FE-S1-L4-Esercizio/assets/img/sfondo.png)
+    background-image: url(../img/sfondo.png)
 }
 /* HEADER */
 img{
