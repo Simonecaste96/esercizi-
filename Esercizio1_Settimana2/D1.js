@@ -81,7 +81,7 @@ document.getElementById("esercizio5").innerHTML=(numero4-x);
 let name1="jhon";
 let name2="Jhon";
 let risultato=name1!==name2;
-let risultato2=name1.toLowerCase==name2.toLowerCase;
+let risultato2=name1.toLowerCase===name2.toLowerCase;
 document.getElementById("esercizio6").innerHTML=("jhon è diverso a Jhon?"+" "+ risultato);
 
 
