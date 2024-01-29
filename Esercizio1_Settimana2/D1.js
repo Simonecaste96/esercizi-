@@ -72,10 +72,8 @@ console.log(x-numero4);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-let name1="jhon"
-let name2="Jhon"
+let name1="jhon";
+let name2="Jhon";
 console.log(name1!==name2);
-if((name1.toLowerCase)(name2.toLowerCase)){
-  
-  console.log(name1.toLowerCase===name2.toLowerCase)
-}
+console.log(name1.toLowerCase===name2.toLowerCase);
+
