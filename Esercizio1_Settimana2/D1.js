@@ -61,8 +61,9 @@ console.log(myName)*/
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 let numero4=4;
-console.log(numero4-x)
-
+console.log(numero4-x);
+console.log("Oppure");
+console.log(x-numero4);
 
 
 /* ESERCIZIO 7
@@ -74,11 +75,6 @@ console.log(numero4-x)
 let name1="jhon"
 let name2="Jhon"
 console.log(name1!==name2);
-if(name2="jhon"){
-  console.log(name1==name2)
+if(name1.toLowerCase===name2.toLowerCase){
+  console.log(name1.toLowerCase===name2.toLowerCase)
 }
-
-
-
-
-  
