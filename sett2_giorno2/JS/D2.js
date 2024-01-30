@@ -156,7 +156,7 @@ const me = {
   skills: ['javascript', 'html', 'css'],
   city:"Toronto",
 }
-document.getElementById("n").innerHTML=[];
+document.getElementById("n").innerHTML=[me];
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
