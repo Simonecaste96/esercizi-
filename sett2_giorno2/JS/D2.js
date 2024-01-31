@@ -41,11 +41,16 @@ else{
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
+/*DA TERMINARE
 let numeroa5=16;
-let numeroa6=8;
-let risultato=8;
-if(numeroa5||numeroa6==risultato || numeroa5-numeroa6==risultato){
-  document.getElementById("d").innerHTML ="Uno dei due numeri è "+ risultato+" e la loro sottrazione da come risultato "+risultato;
+let numeroa6=1;
+let risultatoaddizione=numeroa5+numeroa6;
+let risutlatosottrazione=numeroa5+numeroa6;
+if(numeroa5||numeroa6==risultato || numeroa5-numeroa6==risultato||numeroa5+numeroa6==risultato){
+  document.getElementById("d").innerHTML ="Uno dei due numeri è "+ risultato+" e la loro sottrazione da come risultato "+risultato+"la loro addizione da come risultato";
+}
+else{
+  document.getElementById("d").innerHTML ="In questa operazione non c'è nessun numero 8";
 }
 
 
@@ -106,7 +111,7 @@ document.getElementById("g").innerHTML = numeri;
 */
 
 let numeroa10=20;
-if(typeof numeroa10===Number){
+if(typeof numeroa10==="number"){
   document.getElementById("h").innerHTML = "Il valore fornito è un numero";
 }
 else{
@@ -136,14 +141,15 @@ else{
       console.log("Uguale a 10 o maggiore");
     }
 */
-let val = 7
-  if (val < 10) {
-    document.getElementById("m").innerHTML=("Meno di 10");
-    } else if (val < 5) {
-      document.getElementById("m").innerHTML=("Meno di 5");
-    } else if(val>=10) {
+let val = 7;
+  if (val < 5) {
+    d;document.getElementById("m").innerHTML=("Meno di 5")
+    } else if (val < 10) {
+      ;ocument.getElementById("m").innerHTML=("Meno di 10")
+    } else (val>=10) 
       document.getElementById("m").innerHTML=("Uguale a 10 o maggiore");
-    }
+    
+   
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
@@ -156,7 +162,10 @@ const me = {
   skills: ['javascript', 'html', 'css'],
   city:"Toronto",
 }
-document.getElementById("n").innerHTML=[me];
+document.getElementById("n").innerHTML=me;
+document.getElementById("n").innerHTML=me;
+document.getElementById("n").innerHTML=me;
+document.getElementById("n").innerHTML=me;
 
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -177,7 +186,8 @@ document.getElementById("n").innerHTML=[me];
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let q=[];
+q.getElemnetById("g")
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
