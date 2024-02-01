@@ -67,10 +67,15 @@ console.log(boundary(300));
 */
 
 
-function epify(){
-
+function epify(str){
+if(str==="EPICODE")
+return ("EPICODE")
+else{
+  (str+"EPICODE")
 }
-
+return (str+" EPICODE")
+}
+console.log((epify("SIMONE")))
 
 
 /* ESERCIZIO 6
@@ -78,14 +83,29 @@ function epify(){
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function check3and7(_numb){
+if(_numb%3==0 ) {
+return("Il numero è un multiplo di 3")
+}
+else if(_numb%7==0){
+  return("Il numero è un multiplo di 7")
+}
+else{
+  return("Il numero non è un multiplo di 3 o 7")
+}
+}
+console.log(check3and7(49));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+function reverseString(_str){
+if(_str===""){
+  return (_str)
+}
+}
+console.log(reverseString("EPICODE"))
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
