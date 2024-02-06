@@ -57,12 +57,28 @@ somma2(0)
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const arraynum=[10,20,40,12]
+function  solinumeri(parametro){
+const arraynew=[] = arraynum.map((element)=> element + parametro)
+console.log(arraynew)
+}
+
+solinumeri(2)
+
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
+const epic=['EPICODE','IS','GREAT']
+function epicArray(){
+for(let i=0;i<epic.length;i++){
+epic2.push(epic[i].length)
 
+}
+
+}
+epicArray()
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
