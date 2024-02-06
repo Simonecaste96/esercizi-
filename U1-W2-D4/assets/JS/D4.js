@@ -99,17 +99,16 @@ console.log(check3and7(49));
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+function reverseString(epicode){
 
-function reverseString(_str){
-if(_str===""){
-  return (_str)
 }
-}
-console.log(reverseString("EPICODE"))
+reverseString("EPICODE")
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
