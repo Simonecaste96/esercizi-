@@ -1,0 +1,33 @@
+html,body{
+    margin:0;
+    padding-left: 20%;
+    padding-right: 20%;
+   text-align: center;
+   
+    
+}
+#tombolone{
+    width: auto;
+    height: 200px;
+}
+.contenitore{
+    
+    
+  
+}
+div{
+   display: inline-block;
+   border: solid 1px;
+   
+   
+   
+   
+   
+    
+    
+}
+
+button{
+    width: 100%;
+    
+}
