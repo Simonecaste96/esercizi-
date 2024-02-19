@@ -16,4 +16,4 @@ function estraiNumero(){
     
 }
 
-button.addEventListener('click', estraiNumero);
+button.document.addEventListener('click', estraiNumero);
