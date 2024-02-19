@@ -205,23 +205,65 @@ table{
     margin-top: 10%;
     border-bottom: 2px solid #3f6bca;
 }
- input{
-    font-size: medium;
-    width: 85%;
-    height: 40px;
+ section h2{
+   background-color: #acacac;
+   
+ }
+ .contenitoreAside {
+    background-color: white;
+    padding: 0;
+    margin:0;
+    border: 0;
+ }
+ fieldset{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
     display: inline;
  }
+ fieldset input{
+    width: 65%;
+    height: 4vh;
+ }
+ fieldset button{
+    height: 4vh;
+    width: 20%;
+ }
+
 }
 
 
 @media screen and (min-width:1200px){
- header img p ul{
-    display: inline;
- } 
+body{
+    line-height: 3em;
+}    
+header img{
+    margin-top: 10px;
+}
+ header{
+padding: 0;
+text-align: start;
+height: 10vh;
+ }
+ header div img {
+   margin: 0;
+   
+ }
+ header p{
+    margin: 0;
+ }   
+ header .primaLista{
+    margin-left: 35vw;
+    margin-bottom: 30px;
+ }                                              
+ header div{
+    display: inline-block;
+ }
+
 .contenitoreIframe{
 width: 100%;
 display:inline-flex;
-text-align: center;
 }
 fieldset{
     padding:0;
@@ -233,27 +275,35 @@ fieldset{
 }
 section{
 width:50%;
-padding: 0;
+padding: 15px;
 border-radius: 15px;
+text-align: start;
 }
 iframe{
 width:50%
 }
-.contenitoreAside{
-    column-count: 3;
-    margin:0;
-}
-.contenitoreAside div{
-padding:0;
-border: solid 0;
+
+
+aside div{
+display: inline-block;
+width: 33%;
 
 }
 
 footer{
+    padding:0;
     padding-left:20%;
     padding-right:20%;
 }
+address{
+    padding-left:16.5%;
+    padding-right:16.5%;
+} 
+footer p{
+    margin-bottom: 0;
 }
+}
+
 
 
 
