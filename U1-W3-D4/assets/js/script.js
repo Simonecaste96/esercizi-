@@ -3,17 +3,23 @@ const button=document.getElementById('button')
 const numeriEstratti=[];
 
 for(let i=1; i<91 ;i++){
-const contenitoreNumero= document.createElement('div')
+let contenitoreNumero= document.createElement('div')
 contenitoreNumero.textContent=i;
 numeriEstratti.push(contenitoreNumero)
 tombolone.appendChild(contenitoreNumero)
 }   
 
-
+   
+ 
 function estraiNumero(){
-    const numeroCasuale = Math.floor(Math.random() * 90) + 1;
-
-    
+  let numeriCasuali = Math.floor(Math.random() * 90) + 1;
+  for(let i=0; i<numeriEstratti.length;i++){
+  if(numeriCasuali==parseInt(numeriEstratti[i].textContent)){
+   numeriEstratti[i].style.color="red";
+   numeriEstratti.splice(i,1)
+  break;
+  }
+  } 
 }
 
-button.document.addEventListener('click', estraiNumero);
+document.addEventListener('click', estraiNumero);
