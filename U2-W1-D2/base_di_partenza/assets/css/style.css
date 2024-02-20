@@ -1,0 +1,529 @@
+/* IMPOSTAZIONI GENERALI */
+html {font-size: 62.5%;}
+body { 
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png');
+    background-position: center center;
+}
+* {box-sizing: border-box;}
+hr {display: none;} /* rimuove l'elemento */
+
+/* HEADER */
+header {
+    background: rgb(0,160,198);
+    background: linear-gradient(180deg, rgba(0,160,198,1) 0%, rgba(3,109,134,1) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+}
+header div img {
+    margin-bottom: 20px;
+}
+header nav ul {
+    margin: 0;
+}
+header nav li {
+    list-style: none;
+}
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li a:hover {
+    color: red;
+}
+header nav li a::before {
+    content: "\22c6\0020";
+}
+
+/* MAIN */
+main {
+    background-color: #fff;
+    box-shadow: 0 3px 3px #444;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+section { 
+    background-color: #e3e3e3;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+section h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+}
+p, address, ul, ol, dl, blockquote {
+    margin-bottom: 1.2em;
+}
+h1 + p {
+    color: #a0a0a0;
+}
+ul, ol {
+    margin-left: 2em;
+}
+a {
+    color: #00A0C6;
+    font-weight: bold;
+}
+strong {
+    color: #a02571;
+    font-weight: bold;
+}
+code {
+    background-color: #e3e3e3;
+    border: 1px solid #969494;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #3f6bca;
+    color: #ffffff;
+}
+th, td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #e3e3e3;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+/* FOOTER */
+footer {
+    background: rgb(53,53,53);
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    box-shadow: 0 3px 3px #444;
+    color: #f0f0f0;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a {
+    color: fuchsia;
+}
+
+h1 span{
+    position: relative;
+}
+span img{
+    position: absolute;
+	top: 80%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	opacity: 0.6;
+}
+
+
+@media screen and (min-width:576px){
+.primaLista ul li{
+display: inline;
+
+}
+.primaLista ul{
+padding: 0;
+}
+main{
+    font-size:1.45rem;
+}
+h1{
+    padding-right: 50px;
+    line-height: 5vh;
+    margin:0;
+    font-size: 4rem;
+}
+ol,ul{
+    margin:0;
+    
+}
+table{
+    width: 80%;
+    margin-left: 10;
+    margin-right:10% ;
+    margin-top: 10%;
+    border-bottom: 2px solid #3f6bca;
+}
+ section h2{
+   background-color: #acacac;
+   font-size: x-large;
+    width: 30%;
+    height: 45px;
+    position: relative;
+    bottom:50px;    
+   
+ }
+ .contenitoreAside {
+    background-color: white;
+    padding: 0;
+    margin:0;
+    border: 0;
+ }
+ fieldset{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline;
+ }
+ fieldset input{
+    width: 65%;
+    height: 3vh;
+    font-size: small;
+ }
+ fieldset button{
+    height: 3vh;
+    width: 20%;
+    font-size: small;
+ }
+
+.icona1 img ,.icona2 img ,.icona3 img {
+    background-color: rgb(204, 204, 204);
+    opacity: 0.7;
+    border: solid 3px white;
+    border-radius: 8px;
+    width:50px;
+    height: 50px; 
+    padding: 5px;
+}
+.icona1 img{
+position: fixed;
+right: 0;
+top:80%;
+}
+.icona2 img{
+position: fixed;
+right: 0;
+top:85%;    
+}
+.icona3 img{
+position: fixed;
+right: 0; 
+top:90%;   
+}
+
+.logohtml img{
+    border: solid 4px #968DE8;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    width: 10%;
+    float: left;
+} 
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:768px)  {
+.primaLista ul li{
+display: inline;
+    }
+.primaLista ul{
+ padding:0;
+}
+main{
+    font-size:1.9rem;
+}
+h1{
+    padding-right: 50px;
+    line-height: 5vh;
+    margin:0;
+    font-size: 5rem;
+}
+ol,ul{
+    margin:0;
+}
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10% ;
+    margin-top: 10%;
+    border-bottom: 2px solid #3f6bca;
+}
+ section h2{
+   background-color: #acacac;
+   
+ }
+ .contenitoreAside {
+    background-color: white;
+    padding: 0;
+    margin:0;
+    border: 0;
+ }
+ fieldset{
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline;
+ }
+ fieldset input{
+    width: 65%;
+    height: 4vh;
+    font-size: medium;
+ }
+ fieldset button{
+    height: 4vh;
+    width: 20%;
+    font-size: medium;
+ }
+
+.icona1 img ,.icona2 img ,.icona3 img {
+    background-color: rgb(204, 204, 204);
+    opacity: 0.7;
+    border: solid 3px white;
+    border-radius: 8px;
+    width:50px;
+    height: 50px; 
+    padding: 5px;
+}
+.icona1 img{
+position: fixed;
+right: 0;
+top:5%;
+}
+.icona2 img{
+position: fixed;
+right: 0;
+top:11%;    
+}
+.icona3 img{
+position: fixed;
+right: 0; 
+top:90%;   
+}
+section h2{
+    font-size: larger;
+    width: 25%;
+    height: 40px;
+    position: relative;
+    bottom:50px;    
+}
+.logohtml img{
+    border: solid 4px #968DE8;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px;
+    width: 10%;
+    float: left;
+}
+}
+
+
+
+
+@media screen and (min-width:1200px){
+body{
+    line-height: 3em;
+}    
+header img{
+    margin-top: 10px;
+}
+ header{
+padding: 0;
+text-align: start;
+height: 10vh;
+ }
+ header div img {
+   margin: 0;
+   
+ }
+ header p{
+    margin: 0;
+ }   
+ header .primaLista{
+    margin-left: 35vw;
+    margin-bottom: 30px;
+ }                                              
+ header div{
+    display: inline-block;
+ }
+
+.contenitoreIframe{
+width: 100%;
+display:inline-flex;
+}
+fieldset{
+    padding:0;
+    border: solid 0;
+}
+#user_email{
+    margin-bottom: 5px;
+    margin-left:5px;
+}
+section{
+width:50%;
+padding: 15px;
+border-radius: 15px;
+text-align: start;
+}
+section input{
+height: 40px;
+font-size: medium;
+
+}
+section button{
+    height: 40px;
+    font-size: medium;
+}
+
+iframe{
+width:50%
+}
+
+
+aside div{
+display: inline-block;
+width: 33%;
+
+}
+
+footer{
+    padding:0;
+    padding-left:20%;
+    padding-right:20%;
+}
+address{
+    padding-left:16.5%;
+    padding-right:16.5%;
+} 
+footer p{
+    margin-bottom: 0;
+}
+.icona1 img ,.icona2 img ,.icona3 img {
+    background-color: rgb(204, 204, 204);
+    opacity: 0.7;
+    border: solid 3px white;
+    border-radius: 8px;
+    width:50px;
+    height: 50px; 
+    padding: 5px;
+}
+.icona1 img{
+position: fixed;
+right: 0;
+top:5%;
+}
+.icona2 img{
+position: fixed;
+right: 0;
+top:11%;    
+}
+.icona3 img{
+position: fixed;
+right: 0; 
+top:90%;   
+}
+section h2{
+    width: 25%;
+    position: relative;
+    bottom:50px;    
+}
+.logohtml img{
+    border: solid 4px #968DE8;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px;
+    width: 5%;
+    float: left;
+}
+
+
+}
+
+
+
+
+@media print{
+header,footer,iframe,section,aside{
+    display:none;
+}
+table thead tr{
+    background-color: white;
+    color: black;
+}
+}
+
+
