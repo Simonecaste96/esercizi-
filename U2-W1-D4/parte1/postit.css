@@ -1,0 +1,58 @@
+html,body{
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Indie Flower';
+background-image: url(../mockups/foglio.jpg);
+background-size: cover;
+}
+.container{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+max-width: 100%;
+height: 80vh;
+justify-content: space-evenly;
+margin-top: 10%;
+background-color: transparent;
+}
+
+.postit{
+justify-content: center;
+display:flex;
+align-items: center;
+flex-direction: column;
+width: 250px;
+height: 250px;
+box-shadow: 6px 6px 6px -3px rgba(0,0,0,0.4),
+0px 7px 13px -3px rgba(0,0,0,0.3),
+0px -3px 0px 0px rgba(0,0,0,0.2) inset;
+}
+
+
+h2{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#p1,#p5,#p7{
+    background-color:#D8D8AA ;
+    background: linear-gradient(to bottom, #D8D8AA, #8F909E); 
+    transform: rotate(-7deg);
+}
+#p2,#p4,#p8{
+    background-color:#B4D4B6 ;
+    background: linear-gradient(to bottom, #B4D4B6, #8F909E);
+    transform: rotate(5deg);
+}
+#p3,#p6{
+    background-color:#B4B4D1 ;
+    background: linear-gradient(to bottom, #B4B4D1, #8F909E);
+    transform: rotate(-5deg);
+}
+
+
+#p1:hover, #p2:hover, #p3:hover, #p4:hover, #p5:hover, #p6:hover, #p7:hover, #p8:hover{
+transform: rotate(0);  
+transform: scale(1.16);
+}

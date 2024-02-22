@@ -1,0 +1,151 @@
+html,body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    
+}
+header{
+    width: 16%;
+}
+main{
+    width: 80%;
+    display: flex;
+}
+h1, h2{
+    color: #752305;
+    font-weight: 900;
+}
+.logo{
+    width: 50px;
+    margin: 0;
+    margin-right: 20px
+}
+
+.containerHeader{ 
+flex-direction: column;
+background-color: #FEF7E2;
+text-align: center;
+padding: 10px;   
+height: 100vh;
+
+}
+.containerHeader div{
+border-radius: 50px;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+height: 80px;
+align-items: center;
+font-size: small;
+background-color: #FFDF7F;
+color: #752305;
+}
+.containerNav h3{
+    font-size: x-large;
+}
+.dettagliArticolo{
+    display: flex;
+    
+    
+}
+.dettagliArticolo .prodotto{
+flex-direction: column;
+width:100%;
+justify-content: center;
+font-size: small;
+
+}
+
+.dettagliArticolo  .p{
+    margin: 0;
+    font-size: x-small;
+}
+.dettagliArticolo p{
+    margin: 0;
+    margin-top: 10px;
+   
+}
+.prezzoKg{
+    width: 40%;
+}
+.containerCard{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card img{
+width: 100%;
+border-radius: 20px 20px 0px 0px ;
+
+
+
+}
+.card{
+    width: 19%;
+    border-radius: 20px;
+    text-align: center;
+    height: 100%;
+   font-weight: bold;
+    color: #752305;
+    background-color: #FEF7E2;
+}
+.card div{
+    display: flex;
+
+}
+.prezzo{
+    font-size: small;
+    font-weight: 900;
+    
+}
+.prezzo p{
+    margin: 0 auto;
+    width: 130px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #FFDF7F;
+    color: #752305;
+}
+
+.testo{
+    display: flex;
+    width: 100%;
+    background-color: #FEF7E2;
+    border-radius: 20px;
+}
+.testo h3{
+    margin-top: 0;
+}
+.testo div{
+
+color: #752305;
+font-weight: bold;
+}
+.testo img{
+    width: 500px;
+    padding: 20px;
+}
+.testo h3{
+    font-size: large;
+    font-weight: 900;
+}
+.testo p{
+font-size: small;
+margin-right: 10px;
+}
+.containerMain{
+   width: 100%;
+    background-color: #FFFFFF;
+}
+.containerMain .testo{
+
+}
+
