@@ -1,32 +1,12 @@
 @import 'partials/header';
+
+@import 'partials/main';
+
 html,body{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-$setColori:(
-    grigio:#ccc,
-    blu:#00f
-);
-
-.paragrafo2{
-    color: map-get($map: $setColori, $key:blu );
-}
-main{
-  margin-top: 110px;
-  margin-bottom: 150px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: end;
-}
-
-main img{
-width: 24%;
-border-radius: 10px;
-}
-
 
 /*# sourceMappingURL=style.scss.map */
