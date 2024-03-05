@@ -5,17 +5,20 @@ class User {
         this.age = _age;
         this.location = _location;
     }
-    comparazione() {
-        if (userY.age > userX.age) {
-            console.log(`${userY.firstName} è piu grande di ${userX.firstName}`)
+    comparazione(anotherUser) {
+        if (this.age > anotherUser.age) {
+            console.log(`${this.firstName} è piu grande di ${anotherUser.firstName}`)
         }
-        else {
-            console.log(`${userY.firstName} è piu piccolo di ${userX.firstName}`)
+        else if(this.age < anotherUser.age){
+            console.log(`${this.firstName} è piu piccolo di ${anotherUser.firstName}`)
+        }
+        else{
+            console.log(`${this.firstName} e ${anotherUser.firstName} hanno la stessa età!`)
         }
     }
 }
 const userY = new User("Simone", "Castelluccio", 27, "Roma");
-const userX = new User("Ajeje", "Brazzorf", 60, "Palermo");
+const userX = new User("Ajeje", "Brazzorf", 27, "Palermo");
 
 userY.comparazione(userX);
 
@@ -53,7 +56,7 @@ salva.addEventListener('click', e => {
     const listItem = document.createElement('li');
 
 
-    listItem.textContent = `Nome animale: ${datiInseriti.petName} - Nome padrone: ${datiInseriti.ownerName} -  
+    listItem.innerText = `Nome animale: ${datiInseriti.petName} - Nome padrone: ${datiInseriti.ownerName} -  
     Tipo animale: ${datiInseriti.species} - Razza animale: ${datiInseriti.breed}`;
     lista.appendChild(listItem);
 
