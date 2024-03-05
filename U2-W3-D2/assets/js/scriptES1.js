@@ -33,7 +33,4 @@ function nomeSalvato() {
 
 
 
-/*----ESERCIZIO 2---*/
-
-
 
