@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do-List</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
- <div class="contenitoreCss">
-  <h1>To-Do-List</h1>
- <input id="newtask" type="text" placeholder="Cosa vuoi aggiungere?"/>
- <button id="taskBtn">Aggiungi Task</button>
- <button id="pulisciBtn">Pulisci tutto</button>
- <h3 id="todolist" ></h3>
-<script src="assets/js/script.js"></script>
-</div>
+    
+        <div class="input">
+        <h1>To-Do-List</h1>
+        <input id="newtask" type="text" placeholder="Cosa vuoi aggiungere?" />
+        <button id="submit" type="submit">Aggiungi Task</button>
+        <button id="reset" type="reset">Pulisci tutto</button>
+        </div>
+       
+        <div class="container">
+            <div id="p1" class="postit">
+                <h2>Attività</h2>
+                <ul id="testo" class="testo"></ul>
+            </div>
+           
+        </div>
+        <script src="assets/js/script.js"></script>
+    
 </body>
+
 </html>
