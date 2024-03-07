@@ -54,7 +54,5 @@ function popolazioneHTML() {
 }
 
 
-window.addEventListener('load', init);
-
 
 
