@@ -7,6 +7,7 @@ let arrayVuoto = [];
 
 
 
+
 const asin = async () => {
     await fetch('https://striveschool-api.herokuapp.com/books')
         .then(response => {
@@ -36,7 +37,7 @@ function popolazioneHTML() {
      div.classList.add('col');
      div.innerHTML = `<div class="card" style="width: 18rem; height:40rem" id="${cardAsin}">
      <img src="${img}" class="card-img-top" style="height:25rem" alt="Immagine libro :${title}">
-     <div class="card-body text-center">
+     <div class="card-body">
        <p class="card-title text-danger">${title}</p>
        <p class="card-text">Price: ${price}€</p>
        <p class="card-text">Category: ${category}</p>
