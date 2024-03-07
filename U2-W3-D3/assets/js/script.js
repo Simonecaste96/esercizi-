@@ -5,6 +5,11 @@ const row = document.getElementById('row');
 
 let arrayVuoto = [];
 
+window.addEventListener('load', init);
+function init(){
+asin()
+}
+
 
 
 const asin = async () => {
@@ -49,7 +54,7 @@ function popolazioneHTML() {
 }
 
 
-window.addEventListener('load', asin);
+window.addEventListener('load', init);
 
 
 
