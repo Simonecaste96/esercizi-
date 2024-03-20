@@ -1,1 +1,10 @@
-<app-post-detail></app-post-detail>
+<div class="container d-flex justify-content-center mt-5" *ngFor="let content of contents.splice(0,1), let i = index">
+    <div>
+      <app-contenuto-principale [content]="randomContent" ></app-contenuto-principale>
+      <app-sotto-contenuto [content]="randomContent" ></app-sotto-contenuto>
+    </div>
+    <div>
+      <app-contenuto-consigliato [content]="randomContent"></app-contenuto-consigliato>
+    </div>
+  </div>
+
