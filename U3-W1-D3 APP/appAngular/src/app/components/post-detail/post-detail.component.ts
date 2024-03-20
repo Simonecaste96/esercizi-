@@ -8,6 +8,8 @@ import { Content } from 'src/app/models/content';
 })
 export class PostDetailComponent {
   contents!:Content[];
+  
+
 
 
 constructor(){
@@ -17,9 +19,8 @@ constructor(){
 }
 
  async getContent() {
-  let response = await fetch('assets/db.json');
+  let response = await fetch('../../assets/db.json');
   let data = await response.json();
   return data;
  }
-
 }

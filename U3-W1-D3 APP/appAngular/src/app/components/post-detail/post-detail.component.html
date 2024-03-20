@@ -1,7 +1,7 @@
-<div class="container d-flex">
-  <div>
-    <app-contenuto-principale></app-contenuto-principale>
-    <app-sotto-contenuto></app-sotto-contenuto>
+<div class="container d-flex justify-content-center mt-5">
+  <div *ngFor="let content of contents.slice(0,1), let i = index">
+    <app-contenuto-principale [content]="content" ></app-contenuto-principale>
+    <app-sotto-contenuto [content]="content" ></app-sotto-contenuto>
   </div>
   <div>
     <app-contenuto-consigliato></app-contenuto-consigliato>
