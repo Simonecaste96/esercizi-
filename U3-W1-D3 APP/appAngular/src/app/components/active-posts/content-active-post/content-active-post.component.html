@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+      Scopri di più...
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{contents.title}}</h5>
+      <p class="card-text">{{contents.body}}</p>
+      <a [routerLink]="['/postdetail', contents.id]" class="btn btn-primary">Scopri di più...</a>
+    </div>
+  </div>

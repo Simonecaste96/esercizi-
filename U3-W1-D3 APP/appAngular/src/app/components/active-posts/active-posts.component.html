@@ -1,1 +1,3 @@
-<p>active-posts works!</p>
+<div *ngFor="let content of contents, let i = index">
+<app-content-active-post [content]="content" *ngIf="content.active"></app-content-active-post>
+</div>

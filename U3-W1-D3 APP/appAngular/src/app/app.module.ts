@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Route, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -11,7 +12,33 @@ import { HeaderComponent } from './components/header/header.component';
 import { ContenutoPrincipaleComponent } from './components/contenuto-principale/contenuto-principale.component';
 import { SottoContenutoComponent } from './components/sotto-contenuto/sotto-contenuto.component';
 import { ContenutoConsigliatoComponent } from './components/contenuto-consigliato/contenuto-consigliato.component';
+import { Error404Component } from './components/error404/error404.component';
+import { ContentActivePostComponent } from './components/active-posts/content-active-post/content-active-post.component';
+import { ContentInactivePostComponent } from './components/inactive-posts/content-inactive-post/content-inactive-post.component';
 
+const routes: Route[] = [
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'activePost',
+    component: ActivePostsComponent,
+  },
+  {
+    path: 'inactivePost',
+    component: InactivePostsComponent,
+  },
+  {
+    path:'postdetail/:id',
+    component:PostDetailComponent,
+
+  },
+  {
+    path: '**',
+    component: Error404Component,
+  },
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,12 +50,13 @@ import { ContenutoConsigliatoComponent } from './components/contenuto-consigliat
     HeaderComponent,
     ContenutoPrincipaleComponent,
     SottoContenutoComponent,
-    ContenutoConsigliatoComponent
+    ContenutoConsigliatoComponent,
+    Error404Component,
+    ContentActivePostComponent,
+    ContentInactivePostComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

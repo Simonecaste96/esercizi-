@@ -1,1 +1,4 @@
-<p>inactive-posts works!</p>
+<div *ngFor="let content of contents, let i = index">
+<app-content-inactive-post [content]="content" *ngIf="!content.active"></app-content-inactive-post>    
+</div>
+

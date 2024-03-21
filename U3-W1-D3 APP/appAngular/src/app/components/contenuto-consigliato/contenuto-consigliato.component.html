@@ -5,10 +5,10 @@
       Potrebbero piacerti:
     </div>
     <ul class="list-group list-group-flush">
-      <a href="#"><li class="list-group-item">{{contents.title}}</li></a>
-      <a href="#"><li class="list-group-item">{{contents.title}}</li></a>
-      <a href="#"><li class="list-group-item">{{contents.title}}</li></a>
-      <a href="#"><li class="list-group-item">{{contents.title}}</li></a>
+      <a [routerLink]="['/postdetail', contents.id]"><li class="list-group-item">{{contents.title}}</li></a>
+      <a [routerLink]="['/postdetail', contents.id]"><li class="list-group-item">{{contents.title}}</li></a>
+      <a [routerLink]="['/postdetail', contents.id]"><li class="list-group-item">{{contents.title}}</li></a>
+      <a [routerLink]="['/postdetail', contents.id]"><li class="list-group-item">{{contents.title}}</li></a>
     </ul>
   </div>
 
@@ -17,8 +17,8 @@
       Vedi anche:
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">Post attivi</li>
-      <li class="list-group-item">Post inattivi</li>
+      <a [routerLink]="['/activePost']"><li class="list-group-item">Post attivi</li></a>
+      <a [routerLink]="['/inactivePost']"><li class="list-group-item">Post inattivi</li></a>
     </ul>
   </div>
 </div>
