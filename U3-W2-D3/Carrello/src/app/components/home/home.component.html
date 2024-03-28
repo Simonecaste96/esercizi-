@@ -1,0 +1,12 @@
+
+<div class="container" >
+    <div class="card" style="width: 18rem;" *ngFor="let models of models">
+        <img src="{{models.thumbnail}}" class="card-img-top" alt="{{models.title}}">
+        <div class="card-body">
+          <h5 class="card-title">{{models.title}}</h5>
+          <p class="card-text">{{models.description}}</p>
+          <a href="#" class="btn btn-primary" (click)="addToCart">Add to cart</a>
+        </div>
+      </div> 
+</div>
+<app-cart></app-cart>

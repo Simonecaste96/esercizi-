@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Content } from 'src/app/models/content';
+import { ServicePersonalService } from 'src/app/service/service-personal.service';
 
 @Component({
   selector: 'app-inactive-posts',
@@ -7,18 +8,16 @@ import { Content } from 'src/app/models/content';
   styleUrls: ['./inactive-posts.component.scss']
 })
 export class InactivePostsComponent {
-
-  contents!:Content[];
+  contents:Content[]=[]
+    
   
-  constructor(){
-    this.getContent().then((contents)=>{
-      this.contents = contents;
-    });
+  constructor(private Service:ServicePersonalService){
   }
 
-async getContent() {
-  let response = await fetch('../../assets/db.json');
-  let data = await response.json();
-  return data;
- }
+ ngOnInit():void{
+  this.Service.getContent().then((contents)=>{
+    this.contents = contents;
+  })
+ } 
+
 }

@@ -1,33 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Content } from 'src/app/models/content';
+import { ServicePersonalService } from 'src/app/service/service-personal.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   contents!:Content[];
-  randomContent!: Content 
+  randomContent!: Content; 
 
-
-
-
-constructor(){
-  this.getContent().then((contents)=>{
-    this.contents = contents;
-    this.getRandomContent(); //estraggo indice casuale, invocando la funzione
-  });
+constructor(private Service:ServicePersonalService){
 }
 
- async getContent() {
-  let response = await fetch('../../assets/db.json');
-  let data = await response.json();
-  return data;
- }
+async ngOnInit():Promise<void>{
+  const response = await this.Service.getContent();
+  this.contents = response;
+  this.getRandomContent()
+}
 
-
- getRandomContent(): void {
+ getRandomContent() {
   const randomIndex = Math.floor(Math.random() * this.contents.length);
   this.randomContent = this.contents[randomIndex];
 }

@@ -15,6 +15,9 @@ import { ContenutoConsigliatoComponent } from './components/contenuto-consigliat
 import { Error404Component } from './components/error404/error404.component';
 import { ContentActivePostComponent } from './components/active-posts/content-active-post/content-active-post.component';
 import { ContentInactivePostComponent } from './components/inactive-posts/content-inactive-post/content-inactive-post.component';
+import { DirettivaDirective } from './directives/direttiva.directive';
+import { PipePersonalPipe } from './pipes/pipe-personal.pipe';
+import { SinglePostComponent } from './components/single-post/single-post.component';
 
 const routes: Route[] = [
   {
@@ -54,6 +57,9 @@ const routes: Route[] = [
     Error404Component,
     ContentActivePostComponent,
     ContentInactivePostComponent,
+    DirettivaDirective,
+    PipePersonalPipe,
+    SinglePostComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],

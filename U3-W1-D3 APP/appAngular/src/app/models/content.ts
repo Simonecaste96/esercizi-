@@ -3,6 +3,6 @@ export interface Content {
     title:string,
     body:string,
     active:boolean,
-    tags:string [],
-    reaction:number
+    tags:string[],
+    reactions:number
 }

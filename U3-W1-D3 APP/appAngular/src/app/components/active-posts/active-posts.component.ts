@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Content } from 'src/app/models/content';
+import { ServicePersonalService } from 'src/app/service/service-personal.service';
 @Component({
   selector: 'app-active-posts',
   templateUrl: './active-posts.component.html',
@@ -7,17 +8,14 @@ import { Content } from 'src/app/models/content';
 })
 export class ActivePostsComponent {
 
-  contents!:Content[];
+  contents:Content[] = [];
   
-  constructor(){
-    this.getContent().then((contents)=>{
-      this.contents = contents;
-    });
+  constructor(private Service:ServicePersonalService){
   }
 
-async getContent() {
-  let response = await fetch('../../assets/db.json');
-  let data = await response.json();
-  return data;
- }
+ngOnInit():void{
+  this.Service.getContent().then((contents)=>{
+    this.contents = contents;
+  })
+}
 }

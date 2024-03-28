@@ -1,0 +1,15 @@
+<div class="container" *ngFor="let content of contents, let i=index">
+  <p>{{rimuoviDuplicati(contents[i].tags)}}</p>
+</div>
+<div class="container mt-3" *ngFor="let content of contents, let i=index">
+<div class="card mb-3">
+    <div class="card-header">
+      {{contents[i].tags |pipePersonal}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{contents[i].title}}</h5>
+      <p class="card-text">{{contents[i].body}}</p>
+      <a [routerLink]="['/postdetail', contents[i].id]" class="btn btn-danger">Edit</a>
+    </div>
+  </div>
+</div>
